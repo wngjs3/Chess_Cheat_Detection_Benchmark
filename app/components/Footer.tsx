@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FiGithub, FiMail } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -51,27 +51,19 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <FiMail className="h-5 w-5" />
-                <a href="mailto:juheon.choi@kaist.ac.kr" className="text-gray-300 hover:text-white transition-colors">
-                  juheon.choi@kaist.ac.kr
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <FiGithub className="h-5 w-5" />
-                <a 
-                  href="https://github.com/juheon-choi" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  GitHub
+                <a href="mailto:juheon@kaist.ac.kr" className="text-gray-300 hover:text-white transition-colors">
+                  juheon@kaist.ac.kr
                 </a>
               </li>
             </ul>
+            <p className="mt-4 text-gray-300">
+              For inquiries, please contact us at juheon@kaist.ac.kr
+            </p>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>© {currentYear} KAIST AI Research. All rights reserved.</p>
+          <p>© {currentYear} KAIST RISE Lab. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -12,14 +12,13 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm">
       <div className="container-custom py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 relative">
-              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
-                <div className="bg-chess-light"></div>
-                <div className="bg-chess-dark"></div>
-                <div className="bg-chess-dark"></div>
-                <div className="bg-chess-light"></div>
-              </div>
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative w-12 h-12">
+              <img 
+                src="/Chess_Cheat_Detection_Benchmark/KAIST_logo.png" 
+                alt="KAIST Logo" 
+                className="w-full h-full object-contain"
+              />
             </div>
             <span className="text-xl font-bold text-primary">KAIST Chess Research</span>
           </Link>

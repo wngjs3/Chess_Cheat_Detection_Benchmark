@@ -1,6 +1,6 @@
 # KAIST Chess AI Detection Research Website
 
-This repository contains the website code for KAIST's research on detecting AI cheating in chess.
+This repository contains the website code for KAIST RISE lab's research on detecting AI cheating in chess.
 
 ## Project Overview
 
@@ -47,8 +47,8 @@ This project is configured for automatic deployment to GitHub Pages. To deploy:
 3. Under "Build and deployment", select "GitHub Actions" as the source
 4. The workflow will automatically deploy the site when you push to the main branch
 
-Note: If your repository name is different from `Chess_event_page`, update the `basePath` and `assetPrefix` in `next.config.js` to match your repository name.
+Note: If your repository name is different from `Chess_Cheat_Detection_Benchmark`, update the `basePath` and `assetPrefix` in `next.config.js` to match your repository name.
 
 ## Contact
 
-For more information or questions, please contact juheon.choi@kaist.ac.kr. 
+For more information or questions, please contact juheon@kaist.ac.kr. 
