@@ -16,7 +16,7 @@ const About = () => {
         >
           <h2 className="text-primary mb-6">About the Research</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            I&apos;m Juheon Choi, an AI researcher at KAIST (Korea Advanced Institute of Science & Technology).
+            We are researchers at KAIST RISE lab (Korea Advanced Institute of Science & Technology).
             Our team is focused on addressing AI-assisted cheating in online chess.
           </p>
         </motion.div>
