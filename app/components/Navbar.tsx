@@ -20,7 +20,7 @@ const Navbar = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-xl font-bold text-primary">KAIST Chess Research</span>
+            <span className="text-xl font-bold text-primary">KAIST RISE Lab</span>
           </Link>
 
           {/* Desktop Navigation */}

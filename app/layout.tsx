@@ -15,7 +15,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'KAIST Chess AI Detection Research',
+  title: 'KAIST RISE Lab - Chess AI Detection Research',
   description: 'Research project to develop algorithms for detecting AI-assisted cheating in online chess games',
 }
 
