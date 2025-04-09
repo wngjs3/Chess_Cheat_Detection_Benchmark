@@ -15,6 +15,7 @@ const PlayRedirect = () => {
         if (prev <= 1) {
           clearInterval(timer);
           // Redirect to the chess server
+          // NOTE: Replace this URL with the actual chess server URL provided by the researcher
           window.location.href = "https://lichess.org/";
           return 0;
         }
@@ -53,6 +54,7 @@ const PlayRedirect = () => {
           </Link>
           
           <a 
+            // NOTE: Replace this URL with the actual chess server URL provided by the researcher
             href="https://lichess.org/" 
             className="btn btn-primary"
             target="_blank"
