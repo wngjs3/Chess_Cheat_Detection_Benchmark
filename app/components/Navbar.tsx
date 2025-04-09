@@ -34,6 +34,9 @@ const Navbar = () => {
             <Link href="/#participate" className="text-gray-700 hover:text-primary transition-colors">
               Participate
             </Link>
+            <Link href="/guide" className="text-gray-700 hover:text-primary transition-colors">
+              Guide
+            </Link>
             <Link href="/play" className="btn btn-primary">
               Play Chess
             </Link>
@@ -76,6 +79,13 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Participate
+              </Link>
+              <Link 
+                href="/guide" 
+                className="text-gray-700 hover:text-primary transition-colors py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Guide
               </Link>
               <Link 
                 href="/play" 

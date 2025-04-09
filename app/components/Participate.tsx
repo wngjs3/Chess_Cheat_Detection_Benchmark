@@ -99,9 +99,14 @@ const Participate = () => {
           <h3 className="text-2xl font-bold mb-6">
             Join us to make online chess fairer and more enjoyable for everyone!
           </h3>
-          <Link href="/play" className="btn btn-primary inline-block">
-            Start Playing Now
-          </Link>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/guide" className="btn bg-secondary text-white hover:bg-secondary/90 inline-block">
+              Read Participation Guide
+            </Link>
+            <Link href="/play" className="btn btn-primary inline-block">
+              Start Playing Now
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>
