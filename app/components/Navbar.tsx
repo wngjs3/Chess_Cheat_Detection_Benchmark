@@ -1,12 +1,43 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FiMenu, FiX } from 'react-icons/fi';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // 스크롤 함수 추가
+  const scrollToSection = (id: string) => {
+    if (id.startsWith('#')) {
+      id = id.substring(1);
+    }
+    
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // 홈페이지가 아닌 경우 홈페이지로 이동 후 해당 섹션으로 스크롤
+      window.location.href = `/${id}`;
+    }
+  };
+
+  // 페이지 로드 시 URL의 해시를 확인하여 해당 섹션으로 스크롤
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const id = hash.replace('#', '');
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 500);
+      }
+    }
+  }, []);
 
   return (
     <nav className="bg-white shadow-sm">
@@ -25,15 +56,24 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/#about" className="text-gray-700 hover:text-primary transition-colors">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-gray-700 hover:text-primary transition-colors bg-transparent border-none cursor-pointer"
+            >
               About
-            </Link>
-            <Link href="/#goals" className="text-gray-700 hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => scrollToSection('goals')}
+              className="text-gray-700 hover:text-primary transition-colors bg-transparent border-none cursor-pointer"
+            >
               Research Goals
-            </Link>
-            <Link href="/#participate" className="text-gray-700 hover:text-primary transition-colors">
+            </button>
+            <button 
+              onClick={() => scrollToSection('participate')}
+              className="text-gray-700 hover:text-primary transition-colors bg-transparent border-none cursor-pointer"
+            >
               Participate
-            </Link>
+            </button>
             <Link href="/guide" className="text-gray-700 hover:text-primary transition-colors">
               Guide
             </Link>
@@ -59,27 +99,33 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pt-4 pb-2">
             <div className="flex flex-col space-y-3">
-              <Link 
-                href="/#about" 
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
+              <button 
+                onClick={() => {
+                  scrollToSection('about');
+                  setIsOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 About
-              </Link>
-              <Link 
-                href="/#goals" 
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
+              </button>
+              <button 
+                onClick={() => {
+                  scrollToSection('goals');
+                  setIsOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Research Goals
-              </Link>
-              <Link 
-                href="/#participate" 
-                className="text-gray-700 hover:text-primary transition-colors py-2"
-                onClick={() => setIsOpen(false)}
+              </button>
+              <button 
+                onClick={() => {
+                  scrollToSection('participate');
+                  setIsOpen(false);
+                }}
+                className="text-gray-700 hover:text-primary transition-colors py-2 text-left bg-transparent border-none cursor-pointer"
               >
                 Participate
-              </Link>
+              </button>
               <Link 
                 href="/guide" 
                 className="text-gray-700 hover:text-primary transition-colors py-2"

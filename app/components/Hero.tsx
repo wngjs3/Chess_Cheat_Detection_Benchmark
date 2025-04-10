@@ -5,6 +5,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const Hero = () => {
+  // 스크롤 함수 추가
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-gradient-to-br from-primary to-secondary text-white">
       <div className="container-custom py-20">
@@ -21,9 +29,12 @@ const Hero = () => {
               Help us develop algorithms to detect AI-assisted cheating in online chess games and create a fair playing environment.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="/#participate" className="btn bg-white text-primary hover:bg-gray-100">
+              <button 
+                onClick={() => scrollToSection('participate')}
+                className="btn bg-white text-primary hover:bg-gray-100"
+              >
                 Join Research
-              </Link>
+              </button>
               <Link href="/play" className="btn bg-accent text-white hover:bg-accent/90">
                 Play Chess
               </Link>
