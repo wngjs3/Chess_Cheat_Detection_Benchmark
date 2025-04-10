@@ -39,21 +39,29 @@ export default function Guide() {
                 </p>
               </div>
               
-              <h3 className="text-xl font-bold mb-4">2. Choose a Game Type</h3>
-              <ul className="list-disc pl-6 mb-6 space-y-2">
-                <li><strong>Normal Chess Game</strong>: No time limit per move</li>
-                <li><strong>Blitz Chess Game</strong>: 5 minutes total for all your moves</li>
-              </ul>
+              <h3 className="text-xl font-bold mb-4">2. Create an Account or Login</h3>
+              <p className="mb-4">First, you'll need to create an account or login with your existing username.</p>
               
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image1.png" 
-                    alt="Game type selection" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/create_account.png" 
+                    alt="Create account screen" 
                     className="w-full"
                   />
                 </div>
-                <p className="text-sm text-gray-500 text-center">Game type selection screen</p>
+                <p className="text-sm text-gray-500 text-center">Account creation screen</p>
+              </div>
+              
+              <div className="mb-8">
+                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
+                  <img 
+                    src="/Chess_Cheat_Detection_Benchmark/images/login.png" 
+                    alt="Login screen" 
+                    className="w-full"
+                  />
+                </div>
+                <p className="text-sm text-gray-500 text-center">Login screen for existing users</p>
               </div>
             </div>
             
@@ -66,12 +74,12 @@ export default function Guide() {
                   <p className="mb-4">Create a new game and wait for an opponent to join.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/Chess_Cheat_Detection_Benchmark/images/image2.png" 
-                      alt="Waiting for opponent" 
+                      src="/Chess_Cheat_Detection_Benchmark/images/create_game.png" 
+                      alt="Create a new game" 
                       className="w-full"
                     />
                   </div>
-                  <p className="text-sm text-gray-500 text-center">Waiting for an opponent to join</p>
+                  <p className="text-sm text-gray-500 text-center">Game creation screen</p>
                 </div>
                 
                 <div>
@@ -79,7 +87,7 @@ export default function Guide() {
                   <p className="mb-4">Select from available games created by other players.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/Chess_Cheat_Detection_Benchmark/images/image4.png" 
+                      src="/Chess_Cheat_Detection_Benchmark/images/join_game.png" 
                       alt="Join existing game" 
                       className="w-full"
                     />
@@ -87,40 +95,27 @@ export default function Guide() {
                   <p className="text-sm text-gray-500 text-center">List of available games to join</p>
                 </div>
               </div>
-              
-              <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4">Starting the Game</h3>
-                <p className="mb-4">When a match is found, the game will begin immediately.</p>
-                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
-                  <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image3.png" 
-                    alt="Game starting" 
-                    className="w-full"
-                  />
-                </div>
-                <p className="text-sm text-gray-500 text-center">Game begins when an opponent is found</p>
-              </div>
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8 mb-10">
               <h2 className="text-2xl font-bold mb-6">Using AI Assistance (Cheating Feature)</h2>
               
               <div className="mb-8">
-                <p className="mb-4">In some games, you may be assigned as a player with AI assistance capability.</p>
+                <p className="mb-4">In some games, you may be assigned as a player with AI assistance capability (cheating enabled).</p>
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image5.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/cheater_view.png" 
                     alt="Cheater view" 
                     className="w-full"
                   />
                 </div>
-                <p className="text-sm text-gray-500 text-center">Game interface with AI assistance option</p>
+                <p className="text-sm text-gray-500 text-center">Game interface with "Cheating Enabled" option</p>
               </div>
               
               <div className="bg-gray-100 rounded-lg p-6 mb-6">
                 <h3 className="text-lg font-bold mb-3">Important Notes:</h3>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>You will have <strong>only 5 chances</strong> to use AI assistance during the game</li>
+                  <li>You will have <strong>a limited number of chances</strong> to use AI assistance during the game</li>
                   <li>Press "Use Cheat" button to have the AI make the best move for you</li>
                   <li>Use this feature strategically for research purposes</li>
                   <li>If you are not assigned as a player with AI assistance, play normally</li>
@@ -130,34 +125,12 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image6.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/normal_view.png" 
                     alt="Normal player view" 
                     className="w-full"
                   />
                 </div>
-                <p className="text-sm text-gray-500 text-center">View for normal player</p>
-              </div>
-              
-              <div className="mb-8">
-                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
-                  <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image7.png" 
-                    alt="Game in progress" 
-                    className="w-full"
-                  />
-                </div>
-                <p className="text-sm text-gray-500 text-center">Game in progress</p>
-              </div>
-              
-              <div className="mb-8">
-                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
-                  <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image.png" 
-                    alt="Chess cheater detection" 
-                    className="w-full"
-                  />
-                </div>
-                <p className="text-sm text-gray-500 text-center">Cheating detection is a serious issue in online chess</p>
+                <p className="text-sm text-gray-500 text-center">View for normal player without cheating capability</p>
               </div>
             </div>
             
