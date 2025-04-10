@@ -24,17 +24,20 @@ export default function Guide() {
               <h2 className="text-2xl font-bold mb-6">Getting Started</h2>
               
               <h3 className="text-xl font-bold mb-4">1. Access the Research Chess Platform</h3>
-              <p className="mb-6">
-                Visit: <a 
-                  href="http://34.64.183.234" 
+              <div className="mb-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a 
+                  href="http://34.135.107.186" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-primary hover:underline"
+                  className="btn btn-primary text-lg py-3 px-6 inline-flex items-center justify-center"
                 >
-                  http://34.64.183.234
-                  <FiExternalLink className="ml-1" />
+                  Access Chess Platform
+                  <FiExternalLink className="ml-2" />
                 </a>
-              </p>
+                <p className="text-gray-600 text-center sm:text-left">
+                  Click the button to open the chess platform in a new tab
+                </p>
+              </div>
               
               <h3 className="text-xl font-bold mb-4">2. Choose a Game Type</h3>
               <ul className="list-disc pl-6 mb-6 space-y-2">
@@ -45,7 +48,7 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image1.png" 
+                    src="/images/image1.png" 
                     alt="Game type selection" 
                     className="w-full"
                   />
@@ -63,7 +66,7 @@ export default function Guide() {
                   <p className="mb-4">Create a new game and wait for an opponent to join.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/Chess_Cheat_Detection_Benchmark/images/image2.png" 
+                      src="/images/image2.png" 
                       alt="Waiting for opponent" 
                       className="w-full"
                     />
@@ -76,7 +79,7 @@ export default function Guide() {
                   <p className="mb-4">Select from available games created by other players.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/Chess_Cheat_Detection_Benchmark/images/image4.png" 
+                      src="/images/image4.png" 
                       alt="Join existing game" 
                       className="w-full"
                     />
@@ -90,7 +93,7 @@ export default function Guide() {
                 <p className="mb-4">When a match is found, the game will begin immediately.</p>
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image3.png" 
+                    src="/images/image3.png" 
                     alt="Game starting" 
                     className="w-full"
                   />
@@ -106,7 +109,7 @@ export default function Guide() {
                 <p className="mb-4">In some games, you may be assigned as a player with AI assistance capability.</p>
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/Chess_Cheat_Detection_Benchmark/images/image5.png" 
+                    src="/images/image5.png" 
                     alt="Cheater view" 
                     className="w-full"
                   />
@@ -123,21 +126,54 @@ export default function Guide() {
                   <li>If you are not assigned as a player with AI assistance, play normally</li>
                 </ul>
               </div>
+              
+              <div className="mb-8">
+                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
+                  <img 
+                    src="/images/image6.png" 
+                    alt="Normal player view" 
+                    className="w-full"
+                  />
+                </div>
+                <p className="text-sm text-gray-500 text-center">View for normal player</p>
+              </div>
+              
+              <div className="mb-8">
+                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
+                  <img 
+                    src="/images/image7.png" 
+                    alt="Game in progress" 
+                    className="w-full"
+                  />
+                </div>
+                <p className="text-sm text-gray-500 text-center">Game in progress</p>
+              </div>
+              
+              <div className="mb-8">
+                <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
+                  <img 
+                    src="/images/image.png" 
+                    alt="Chess cheater detection" 
+                    className="w-full"
+                  />
+                </div>
+                <p className="text-sm text-gray-500 text-center">Cheating detection is a serious issue in online chess</p>
+              </div>
             </div>
             
             <div className="bg-white rounded-lg shadow-md p-8">
               <h2 className="text-2xl font-bold mb-6">Ready to Play?</h2>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a 
-                  href="http://34.64.183.234" 
+                  href="http://34.135.107.186" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn btn-primary inline-flex items-center"
+                  className="btn btn-primary text-lg py-3 px-6 w-full sm:w-auto inline-flex items-center justify-center"
                 >
                   Go to Chess Platform
                   <FiExternalLink className="ml-2" />
                 </a>
-                <Link href="/" className="btn bg-gray-200 text-gray-800 hover:bg-gray-300">
+                <Link href="/" className="btn bg-gray-200 text-gray-800 hover:bg-gray-300 w-full sm:w-auto text-center">
                   Return to Home
                 </Link>
               </div>

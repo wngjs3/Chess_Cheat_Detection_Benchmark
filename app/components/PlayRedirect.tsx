@@ -15,7 +15,7 @@ const PlayRedirect = () => {
         if (prev <= 1) {
           clearInterval(timer);
           // Redirect to the chess server
-          window.location.href = "http://34.64.183.234/";
+          window.location.href = "http://34.135.107.186/";
           return 0;
         }
         return prev - 1;
@@ -61,7 +61,7 @@ const PlayRedirect = () => {
           </Link>
           
           <a 
-            href="http://34.64.183.234/" 
+            href="http://34.135.107.186/" 
             className="btn btn-primary"
             target="_blank"
             rel="noopener noreferrer"

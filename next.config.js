@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // GitHub Pages를 위한 base path 설정 (저장소 이름으로 변경하세요)
+  // GitHub Pages를 위한 base path 설정
   basePath: '/Chess_Cheat_Detection_Benchmark',
   assetPrefix: '/Chess_Cheat_Detection_Benchmark',
 }
