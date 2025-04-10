@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -36,23 +37,11 @@ const Hero = () => {
             className="hidden lg:block"
           >
             <div className="relative w-full aspect-square max-w-lg mx-auto">
-              <div className="absolute inset-0 grid grid-cols-8 grid-rows-8">
-                {/* Chess board pattern */}
-                {Array.from({ length: 64 }).map((_, index) => {
-                  const row = Math.floor(index / 8);
-                  const col = index % 8;
-                  const isLight = (row + col) % 2 === 0;
-                  
-                  return (
-                    <div 
-                      key={index} 
-                      className={`${isLight ? 'bg-chess-light' : 'bg-chess-dark'} relative`}
-                    >
-                      {/* Could add chess pieces here */}
-                    </div>
-                  );
-                })}
-              </div>
+              <img 
+                src="/Chess_Cheat_Detection_Benchmark/cheating_image.png" 
+                alt="AI Chess Cheating Detection" 
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
             </div>
           </motion.div>
         </div>
