@@ -48,7 +48,7 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image1.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image1.png" 
                     alt="Game type selection" 
                     className="w-full"
                   />
@@ -66,7 +66,7 @@ export default function Guide() {
                   <p className="mb-4">Create a new game and wait for an opponent to join.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/images/image2.png" 
+                      src="/Chess_Cheat_Detection_Benchmark/images/image2.png" 
                       alt="Waiting for opponent" 
                       className="w-full"
                     />
@@ -79,7 +79,7 @@ export default function Guide() {
                   <p className="mb-4">Select from available games created by other players.</p>
                   <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                     <img 
-                      src="/images/image4.png" 
+                      src="/Chess_Cheat_Detection_Benchmark/images/image4.png" 
                       alt="Join existing game" 
                       className="w-full"
                     />
@@ -93,7 +93,7 @@ export default function Guide() {
                 <p className="mb-4">When a match is found, the game will begin immediately.</p>
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image3.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image3.png" 
                     alt="Game starting" 
                     className="w-full"
                   />
@@ -109,7 +109,7 @@ export default function Guide() {
                 <p className="mb-4">In some games, you may be assigned as a player with AI assistance capability.</p>
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image5.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image5.png" 
                     alt="Cheater view" 
                     className="w-full"
                   />
@@ -130,7 +130,7 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image6.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image6.png" 
                     alt="Normal player view" 
                     className="w-full"
                   />
@@ -141,7 +141,7 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image7.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image7.png" 
                     alt="Game in progress" 
                     className="w-full"
                   />
@@ -152,7 +152,7 @@ export default function Guide() {
               <div className="mb-8">
                 <div className="border border-gray-200 rounded-lg overflow-hidden mb-4">
                   <img 
-                    src="/images/image.png" 
+                    src="/Chess_Cheat_Detection_Benchmark/images/image.png" 
                     alt="Chess cheater detection" 
                     className="w-full"
                   />
